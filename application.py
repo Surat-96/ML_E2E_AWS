@@ -5,7 +5,7 @@ import pandas as pd
 import re
 import warnings
 
-app = Flask(__name__)
+application = Flask(__name__)
 
 
 filename = open('HP/hpmodel.pkl', 'rb')
