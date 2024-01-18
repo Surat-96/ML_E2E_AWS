@@ -12,16 +12,16 @@ filename = open('HP/hpmodel.pkl', 'rb')
 model = pickle.load(filename)
 filename.close()
 
-@app.route('/')
+@application.route('/')
 def index():
 	return render_template('home.html')
 
-@app.route('/home')
+@application.route('/home')
 def home():
 	return render_template('home.html')
 
 
-@app.route('/hppredict', methods=['GET','POST'])
+@application.route('/hppredict', methods=['GET','POST'])
 def hppredict():
     if request.method == "POST":
 
@@ -44,5 +44,5 @@ def hppredict():
 
 
 if __name__ == '__main__':
-	app.run(debug=True)
+	application.run(debug=True)
 

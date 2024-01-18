@@ -3,12 +3,16 @@ numpy
 seaborn
 matplotlib
 scikit-learn
+ipykernel
 catboost
 xgboost
-Flask
+dill
+flask
+flask_cors
 gunicorn
 itsdangerous
 Jinja2
 MarkupSafe
 Werkzeug
+lime
 #-e .
